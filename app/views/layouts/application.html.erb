@@ -18,12 +18,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand">DevMatch</a>
-          <a href="/about"class="navbar-brand">About</a>
+          <%= link_to "/", class: "navbar-brand" do %>DevMatch<% end %>
+          <%= link_to "/about", class: "navbar-brand" do %>About<% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/about">About</a></li>
+            <li><%= link_to "About", "/about" %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
